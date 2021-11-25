@@ -30,7 +30,7 @@ contract Lottery {
     
     
     /**
-     * @dev requires the deposit of 0.1 ether and if met pushes on address on list
+     * @dev requires the deposit of 0.001 ether and if met pushes on address on list
      */ 
     receive() external payable {
         //require that the transaction value to the contract is 0.1 ether
