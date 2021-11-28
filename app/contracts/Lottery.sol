@@ -75,7 +75,7 @@ contract Lottery {
         
         //transfers balance to winner
         winner.transfer( (getBalance() * 90) / 100); //gets only 90% of funds in contract
-        payable(admin).transfer( (getBalance() * 10) / 100); //gets remaining amount AKA 10% -> must make admin a payable account
+        payable(admin).transfer( (getBalance() * 10) / 100); //gets remaining amount AKA 10% -> To the liquidity pool
         
         
         //resets the plays array once someone is picked
